@@ -234,6 +234,37 @@ h6 a strong {
   color: #333;
 }
 
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h1.alt {
+  color: white;
+}
+
+h1.alt strong {
+  color: #666;
+}
+
 h2 {
   font-size: 2em;
   letter-spacing: -1px;
@@ -286,7 +317,7 @@ a {
 }
 
 a:hover {
-  color: #e27689;
+  color: rgb(168, 213, 230);
   border-bottom-color: rgba(255, 255, 255, 0);
 }
 
@@ -2075,7 +2106,7 @@ input[type='submit']:hover,
 input[type='reset']:hover,
 button:hover,
 .button:hover {
-  background-color: #9ececc;
+  background-color: rgb(170, 220, 240);
 }
 
 input[type='button']:active,
@@ -2083,7 +2114,7 @@ input[type='submit']:active,
 input[type='reset']:active,
 button:active,
 .button:active {
-  background-color: #7eaeac;
+  background-color: rgb(170, 170, 170);
 }
 
 /* Item */
@@ -2208,6 +2239,9 @@ button:active,
   margin: 1.75em 1.5em 1.5em 1.5em;
   min-height: 48px;
   cursor: default;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo h1 {
@@ -2216,6 +2250,7 @@ button:active,
   font-weight: 600;
   font-size: 1em;
   line-height: 1em;
+  display: inline-block;
 }
 
 #logo p {
@@ -2279,6 +2314,7 @@ button:active,
 
 #nav ul li a.active span:before {
   color: #e27689;
+  color: skyblue;
 }
 
 /* Footer */
@@ -2858,7 +2894,7 @@ input[type='submit'] {
   color: #fff !important;
   text-decoration: none;
   padding: 0.1rem 2rem;
-  background-color: #8ebebc;
+  background-color: skyblue;
   border: 0;
   cursor: pointer;
   letter-spacing: 2px;
@@ -2871,6 +2907,15 @@ input[type='submit'] {
 
 .learn-btn {
   padding: 0.5rem 1.2rem;
+}
+
+.title {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.code-icon {
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
